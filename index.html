@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+        <script src="script.js" defer></script>
+        <title>Etch A Sketch</title>
+    </head>
+    <body style="background-color: black">
+        <main
+            style="
+                background-color: whitesmoke;
+                height: 500px;
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            "
+            id="sketch"
+        ></main>
+        <nav style="text-align: center">
+            <label for="slider" style="color: whitesmoke"></label>
+            <input
+                type="range"
+                min="1"
+                max="64"
+                value="1"
+                name="slider"
+                id="slider"
+            />
+            <h5 style="color: aqua">Color:</h5>
+            <button id="random">Random</button>
+            <button id="black">Black</button>
+            <section class="color-picker"></section>
+        </nav>
+    </body>
+</html>
