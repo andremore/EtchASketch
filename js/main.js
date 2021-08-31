@@ -6,7 +6,7 @@ import pickr from './colorPicker.js';
 
 const container = document.querySelector('#sketch');
 
-const slider = document.querySelector('input');
+let slider = document.querySelector('input');
 
 let output = document.querySelector('label');
 output.innerHTML = slider.value;
@@ -34,7 +34,7 @@ function grid() {
         const blackColor = document.querySelector('#black');
 
         // Default color
-        square.addEventListener('mouseover', function () {
+        square.addEventListener('click', function () {
             square.style.backgroundColor = 'black';
         });
 
@@ -55,6 +55,7 @@ function grid() {
             });
         });
 
+        square.style.border = '1px solid black';
         container.append(square);
     }
 }
